@@ -27,13 +27,13 @@ public interface CurrencyExchangeProxy {
 }
 ```
   
--  ***Step 4***: 
+-  ***Step 4***:   
+  ```
+@autowired   
+CurrencyExchangeProxy currencyExchangeProxy;  
   
-@autowired 
-CurrencyExchangeProxy currencyExchangeProxy;
-
-currencyExchangeProxy.getCurrencyExchange(from, to);
-
+currencyExchangeProxy.getCurrencyExchange(from, to);  
+```
 --------------------------------------------------------------------------------------
 URL
 

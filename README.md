@@ -4,9 +4,7 @@ feign client example
   
                         **Currency-conversion -> Currency-Exchange -> Database**
                         
-- 
-  
-**Step 1**  : add dependecies for openfeign
+-**Step 1**  : add dependecies for openfeign
 ```
 <!-- openfeign dependency -->
 		<dependency>
@@ -15,13 +13,9 @@ feign client example
 		</dependency>
 ```		
   
-------------------------------------------------------------------------------------    
+-***Step 2***: go to applicaton main class ```@EnableFeignClients```
   
-***Step 2***: go to applicaton main class ```@EnableFeignClients```
-  
--------------------------------------------------------------------------------------  
-  
-***Step 3***: Create proxy interface for those want to call
+-***Step 3***: Create proxy interface for those want to call
 ```
 @FeignClient(name = "currency-exchange", url = "localhost:8000")
 public interface CurrencyExchangeProxy {
@@ -32,9 +26,7 @@ public interface CurrencyExchangeProxy {
 }
 ```
   
---------------------------------------------------------------------------------------
-  
-***Step 4***: 
+-***Step 4***: 
 @autowired 
 CurrencyExchangeProxy currencyExchangeProxy;
 
